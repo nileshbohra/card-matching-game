@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+.App {
+  background-size: contain;
+}
+
+.card-container {
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  gap: 20px;
+  padding: 20px;
+  grid-template-rows: auto auto;
+  grid-auto-flow: column;
+}
+.card {
+  display: flex;
+  position: relative;
+  color: whitesmoke;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  height: 230px;
+  z-index: 3;
+  cursor: pointer;
+}
+.back-side,
+.front-side {
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  border-radius: 20px;
+  backface-visibility: hidden;
+  transition: transform 0.6s linear;
+  position: absolute;
+  overflow: hidden;
+  background-color: transparent;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.front-side {
+  border: solid black 8px;
+}
+
+@keyframes example {
+  from {
+    transform: perspective(700px) rotateY(180deg);
+  }
+  to {
+    transform: perspective(700px) rotateY(0deg);
+  }
+}
