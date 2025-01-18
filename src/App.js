@@ -1,14 +1,14 @@
 import './App.css';
 import Card from './components/Card';
-import bg from "./assets/bg.jpg";
-import boy from "./assets/boy-4.jpg";
-import girl from "./assets/girl-3.jpg";
-import cat from "./assets/cat-1.jpg";
-import dog from "./assets/dog-2.jpg";
+import bg from "./assets/bg-min.jpg";
+import boy from "./assets/boy-4-min.jpg";
+import girl from "./assets/girl-3-min.jpg";
+import cat from "./assets/cat-1-min.jpg";
+import dog from "./assets/dog-2-min.jpg";
 
 const cardBgs = [boy, girl, cat, dog];
 function App() {
-  let deckSize = [4, 6, 8, 10];
+  let deckSize = [4, 6, 8];
   let currentDeckSize = null;
   function generateCard(n) {
     currentDeckSize = n;

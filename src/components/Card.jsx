@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import cardback from "../assets/playing-card.png";
+import cardback from "../assets/playing-card-min.png";
 
 export default function Card({ id, value, click, frontBg }) {
   const [stayClicked, setStayClicked] = useState(false);
